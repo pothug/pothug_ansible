@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to ping all ansible nodes
+    ping:
+  - name: i want to webserver on ubuntu
+    apt:
+      name: apache2
+      state: present
+      
